@@ -23,11 +23,11 @@ export default function Home() {
               },
               {
                 icon: <ShieldCheck size={28} strokeWidth={1.5} />,
-                text: "개발 끝나고 나몰라라 하는 일이 일어나면 그대로 파산신청하겠습니다.",
+                text: "최신 AI 기술을 융합하여 2배 이상 빠른 개발 속도와 고품질을 보장해 드립니다.",
               },
             ].map((item, i) => (
-              <div key={i} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-5">
-                <div className="text-indigo-300 mb-3">{item.icon}</div>
+              <div key={i} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-5 text-center">
+                <div className="text-indigo-300 mb-3 flex justify-center">{item.icon}</div>
                 <p className="text-gray-200 text-sm leading-relaxed">{item.text}</p>
               </div>
             ))}
@@ -101,7 +101,7 @@ export default function Home() {
       {/* Apps */}
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-3">출시 앱</h2>
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-3">출시 예정 앱</h2>
           <p className="text-center text-gray-500 mb-12">직접 개발하고 운영 중인 서비스</p>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="rounded-2xl overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow">
