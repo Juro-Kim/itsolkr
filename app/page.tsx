@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Wrench, HeartHandshake, ShieldCheck } from "lucide-react";
+import { Wrench, HeartHandshake, ShieldCheck, Smartphone, Globe, Monitor } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
           <p className="text-[#9f95f5] font-semibold tracking-widest uppercase text-sm mb-4">
             Full-Stack AI Solutions
           </p>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-wider">ITSOLKR</h1>
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 tracking-wider">ITSOLKR의 3대 철칙</h1>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 max-w-3xl mx-auto text-left">
             {[
               {
@@ -71,26 +72,30 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-3">서비스</h2>
           <p className="text-center text-gray-500 mb-12">기획부터 배포까지 원스톱으로 제공합니다</p>
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: "📱",
-                title: "모바일 앱 개발",
-                desc: "React Native + Expo 기반 iOS/Android 크로스플랫폼 앱 개발. 실시간 채팅, 소셜 로그인, 위치 기반 서비스 구현.",
-              },
-              {
-                icon: "🌐",
-                title: "웹 서비스 개발",
-                desc: "Next.js, React 기반 웹 서비스. SEO 최적화, PWA, 관리자 대시보드 등 풀스택 구현.",
-              },
-              {
-                icon: "🤖",
-                title: "AI 솔루션 통합",
-                desc: "OpenAI API 등 최신 AI를 서비스에 통합. 자동화, 분석, 인텔리전트 기능 구현.",
-              },
-            ].map((s) => (
+            {(
+              [
+                {
+                  titleIcon: Smartphone,
+                  title: "모바일 앱 개발",
+                  desc: "React Native + Expo 기반 iOS/Android 크로스플랫폼 앱 개발. 실시간 채팅, 소셜 로그인, 위치 기반 서비스 구현.",
+                },
+                {
+                  titleIcon: Globe,
+                  title: "웹 서비스 개발",
+                  desc: "Next.js, React 기반 웹 서비스. 유지비 0원, PWA, 관리자 대시보드 등 풀스택 구현.",
+                },
+                {
+                  titleIcon: Monitor,
+                  title: "로컬 프로그램",
+                  desc: "인터넷 없이 실행되는 자동화 프로그램 개발. 생산 스케줄러, 데이터 일괄 처리 등 사내 환경에 최적화된 데스크톱 솔루션을 구현.",
+                },
+              ] as { titleIcon: LucideIcon; title: string; desc: string }[]
+            ).map((s) => (
               <div key={s.title} className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                <div className="text-4xl mb-4">{s.icon}</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{s.title}</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center justify-center gap-2">
+                  {s.title}
+                  <s.titleIcon size={18} strokeWidth={1.5} className="text-[#7b6ef6]" />
+                </h3>
                 <p className="text-gray-600 leading-relaxed">{s.desc}</p>
               </div>
             ))}
