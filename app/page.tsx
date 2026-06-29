@@ -5,9 +5,9 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-900 text-white py-28 px-4">
+      <section className="bg-gradient-to-br from-[#1a1b2e] via-[#252836] to-[#2d2b4e] text-white py-28 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-indigo-400 font-semibold tracking-widest uppercase text-sm mb-4">
+          <p className="text-[#9f95f5] font-semibold tracking-widest uppercase text-sm mb-4">
             Full-Stack AI Solutions
           </p>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-wider">ITSOLKR</h1>
@@ -27,7 +27,7 @@ export default function Home() {
               },
             ].map((item, i) => (
               <div key={i} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-5 text-center">
-                <div className="text-indigo-300 mb-3 flex justify-center">{item.icon}</div>
+                <div className="text-[#b3acf7] mb-3 flex justify-center">{item.icon}</div>
                 <p className="text-gray-200 text-sm leading-relaxed">{item.text}</p>
               </div>
             ))}
@@ -35,7 +35,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/portfolio"
-              className="bg-indigo-600 hover:bg-indigo-500 px-8 py-3 rounded-lg font-semibold transition-colors"
+              className="bg-[#7b6ef6] hover:bg-[#8a7ef7] px-8 py-3 rounded-lg font-semibold transition-colors"
             >
               포트폴리오 보기
             </Link>
@@ -50,7 +50,7 @@ export default function Home() {
       </section>
 
       {/* Stats */}
-      <section className="bg-indigo-600 py-10 text-white">
+      <section className="bg-[#7b6ef6] py-10 text-white">
         <div className="max-w-3xl mx-auto grid grid-cols-3 gap-4 text-center px-4">
           {[
             { num: "5+", label: "Projects Shipped" },
@@ -59,7 +59,7 @@ export default function Home() {
           ].map((s) => (
             <div key={s.label}>
               <div className="text-3xl md:text-4xl font-bold">{s.num}</div>
-              <div className="text-indigo-200 text-xs mt-1 uppercase tracking-widest">{s.label}</div>
+              <div className="text-[#d5d0fb] text-xs mt-1 uppercase tracking-widest">{s.label}</div>
             </div>
           ))}
         </div>
@@ -116,7 +116,7 @@ export default function Home() {
                   실시간 채팅으로 소통하는 배달 플랫폼.
                 </p>
                 <div className="flex gap-3">
-                  <Link href="/apps/delivery" className="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors text-sm">
+                  <Link href="/apps/delivery" className="text-[#7b6ef6] font-semibold hover:text-[#5b52c8] transition-colors text-sm">
                     앱 소개 →
                   </Link>
                   <span className="text-gray-300">|</span>
@@ -139,7 +139,7 @@ export default function Home() {
                   맞는 상대를 찾아주는 소셜 매칭 앱.
                 </p>
                 <div className="flex gap-3">
-                  <Link href="/apps/dating" className="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors text-sm">
+                  <Link href="/apps/dating" className="text-[#7b6ef6] font-semibold hover:text-[#5b52c8] transition-colors text-sm">
                     앱 소개 →
                   </Link>
                   <span className="text-gray-300">|</span>
@@ -181,7 +181,7 @@ export default function Home() {
                 <p className="text-gray-500 text-sm mb-4">{p.desc}</p>
                 <div className="flex flex-wrap gap-2">
                   {p.tags.map((t) => (
-                    <span key={t} className="bg-indigo-50 text-indigo-700 text-xs px-2 py-1 rounded-full border border-indigo-100">
+                    <span key={t} className="bg-[#eeebff] text-[#5b52c8] text-xs px-2 py-1 rounded-full border border-[#d5d0fb]">
                       {t}
                     </span>
                   ))}
@@ -192,7 +192,7 @@ export default function Home() {
           <div className="text-center mt-10">
             <Link
               href="/portfolio"
-              className="bg-indigo-600 hover:bg-indigo-500 text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-block"
+              className="bg-[#7b6ef6] hover:bg-[#8a7ef7] text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-block"
             >
               전체 포트폴리오 보기
             </Link>
@@ -201,7 +201,7 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-4 bg-slate-900 text-white text-center">
+      <section className="py-20 px-4 bg-[#1e2030] text-white text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">프로젝트 문의</h2>
           <p className="text-gray-400 mb-8 leading-relaxed">

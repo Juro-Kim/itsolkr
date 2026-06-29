@@ -22,7 +22,7 @@ export default function Contact() {
                 <h3 className="font-bold text-gray-900 mb-1">이메일</h3>
                 <a
                   href="mailto:juro3040@gmail.com"
-                  className="text-indigo-600 hover:text-indigo-800 transition-colors"
+                  className="text-[#7b6ef6] hover:text-[#5b52c8] transition-colors"
                 >
                   juro3040@gmail.com
                 </a>
@@ -56,7 +56,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-br from-slate-800 to-indigo-900 rounded-2xl p-8 text-white">
+        <div className="bg-gradient-to-br from-[#252836] to-[#2d2b4e] rounded-2xl p-8 text-white">
           <h2 className="text-2xl font-bold mb-4">외주 개발 문의</h2>
           <p className="text-gray-300 mb-6 leading-relaxed">
             모바일 앱, 웹 서비스, AI 솔루션 통합 등<br />
@@ -72,7 +72,7 @@ export default function Contact() {
               "기존 서비스 리팩토링",
             ].map((item) => (
               <li key={item} className="flex items-center gap-3">
-                <span className="w-1.5 h-1.5 bg-indigo-400 rounded-full flex-shrink-0" />
+                <span className="w-1.5 h-1.5 bg-[#9f95f5] rounded-full flex-shrink-0" />
                 {item}
               </li>
             ))}
@@ -81,7 +81,7 @@ export default function Contact() {
             href="https://mail.google.com/mail/?view=cm&to=juro3040@gmail.com&su=ITSOLKR 외주 개발 문의"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-indigo-500 hover:bg-indigo-400 px-6 py-3 rounded-lg font-semibold transition-colors"
+            className="inline-block bg-[#7b6ef6] hover:bg-[#8a7ef7] px-6 py-3 rounded-lg font-semibold transition-colors"
           >
             이메일로 문의하기
           </a>

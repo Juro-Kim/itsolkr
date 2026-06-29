@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-gray-400 mt-auto">
+    <footer className="bg-[#1e2030] text-gray-400 mt-auto">
       <div className="max-w-6xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
@@ -34,7 +34,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-slate-700 pt-6 text-sm text-center">
+        <div className="border-t border-[#2f3248] pt-6 text-sm text-center">
           © 2024 ITSOLKR. All rights reserved. &nbsp;|&nbsp; 대표: 김주영 &nbsp;|&nbsp;
           <a href="mailto:juro3040@gmail.com" className="hover:text-white transition-colors"> juro3040@gmail.com</a>
         </div>

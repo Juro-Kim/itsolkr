@@ -6,9 +6,9 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="bg-slate-900 text-white sticky top-0 z-50 shadow-lg">
+    <header className="bg-[#1e2030] text-white sticky top-0 z-50 shadow-lg">
       <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="text-xl font-bold tracking-widest text-white hover:text-indigo-400 transition-colors">
+        <Link href="/" className="text-xl font-bold tracking-widest text-white hover:text-[#9f95f5] transition-colors">
           ITSOLKR
         </Link>
         <button className="md:hidden p-1" onClick={() => setOpen(!open)} aria-label="메뉴">
@@ -18,7 +18,7 @@ export default function Header() {
               : <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />}
           </svg>
         </button>
-        <nav className={`${open ? "flex" : "hidden"} md:flex flex-col md:flex-row absolute md:static top-16 left-0 right-0 bg-slate-900 md:bg-transparent p-4 md:p-0 gap-1 md:gap-6 text-sm font-medium border-t border-slate-700 md:border-0`}>
+        <nav className={`${open ? "flex" : "hidden"} md:flex flex-col md:flex-row absolute md:static top-16 left-0 right-0 bg-[#1e2030] md:bg-transparent p-4 md:p-0 gap-1 md:gap-6 text-sm font-medium border-t border-[#2f3248] md:border-0`}>
           {[
             { href: "/", label: "홈" },
             { href: "/portfolio", label: "포트폴리오" },
@@ -29,7 +29,7 @@ export default function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="px-3 py-2 md:py-1 rounded hover:text-indigo-400 transition-colors"
+              className="px-3 py-2 md:py-1 rounded hover:text-[#9f95f5] transition-colors"
               onClick={() => setOpen(false)}
             >
               {item.label}

@@ -48,7 +48,7 @@ export default function Portfolio() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-16">
       <div className="text-center mb-16">
-        <p className="text-indigo-600 font-semibold tracking-widest uppercase text-sm mb-3">Case Studies</p>
+        <p className="text-[#7b6ef6] font-semibold tracking-widest uppercase text-sm mb-3">Case Studies</p>
         <h1 className="text-4xl font-bold text-gray-900 mb-4">포트폴리오</h1>
         <p className="text-gray-500 text-lg">ITSOLKR이 완성한 프로젝트 — {projects.length}건</p>
       </div>
@@ -81,7 +81,7 @@ export default function Portfolio() {
                 <ul className="space-y-2">
                   {p.features.map((f, j) => (
                     <li key={j} className="flex items-start gap-3 text-gray-700 text-sm">
-                      <span className="text-indigo-400 mt-0.5 flex-shrink-0">▸</span>
+                      <span className="text-[#9f95f5] mt-0.5 flex-shrink-0">▸</span>
                       <span>{f}</span>
                     </li>
                   ))}
