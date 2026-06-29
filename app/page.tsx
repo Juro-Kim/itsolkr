@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Wrench, HeartHandshake, ShieldCheck } from "lucide-react";
 
 export default function Home() {
   return (
@@ -10,11 +11,27 @@ export default function Home() {
             Full-Stack AI Solutions
           </p>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-wider">ITSOLKR</h1>
-          <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-            프론트엔드부터 백엔드·서버·DB까지,<br className="hidden md:block" />
-            전체 개발 흐름을 이해하고 기술 간 최적 조합으로<br className="hidden md:block" />
-            안정적인 결과물을 만들어냅니다.
-          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 max-w-3xl mx-auto text-left">
+            {[
+              {
+                icon: <Wrench size={28} strokeWidth={1.5} />,
+                text: "웹 / 앱 / 프로그램 최적의 언어조합과 저렴한 비용으로 개발 및 유지보수 해드립니다.",
+              },
+              {
+                icon: <HeartHandshake size={28} strokeWidth={1.5} />,
+                text: "새로운 고객보다 이전 의뢰자를 최우선으로 두고 끝까지 책임집니다.",
+              },
+              {
+                icon: <ShieldCheck size={28} strokeWidth={1.5} />,
+                text: "개발 끝나고 나몰라라 하는 일이 일어나면 그대로 파산신청하겠습니다.",
+              },
+            ].map((item, i) => (
+              <div key={i} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-5">
+                <div className="text-indigo-300 mb-3">{item.icon}</div>
+                <p className="text-gray-200 text-sm leading-relaxed">{item.text}</p>
+              </div>
+            ))}
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/portfolio"
