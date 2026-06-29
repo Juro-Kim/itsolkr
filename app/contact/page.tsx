@@ -78,7 +78,9 @@ export default function Contact() {
             ))}
           </ul>
           <a
-            href="mailto:juro3040@gmail.com?subject=ITSOLKR 외주 개발 문의"
+            href="https://mail.google.com/mail/?view=cm&to=juro3040@gmail.com&su=ITSOLKR 외주 개발 문의"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-indigo-500 hover:bg-indigo-400 px-6 py-3 rounded-lg font-semibold transition-colors"
           >
             이메일로 문의하기
